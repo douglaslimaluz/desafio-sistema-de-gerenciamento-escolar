@@ -1,13 +1,13 @@
-package com.api.produto;
+package com.api.se;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProdutoApplication {
+public class SEApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProdutoApplication.class, args);
+		SpringApplication.run(SEApplication.class, args);
 	}
 
 }
