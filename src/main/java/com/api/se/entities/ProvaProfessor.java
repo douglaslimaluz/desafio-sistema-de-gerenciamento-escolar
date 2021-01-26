@@ -4,23 +4,25 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class Prova {
+@Table(name = "prova_professor")
+public class ProvaProfessor {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private int[] gabarito;
+	private String titulo;
 	
-	private int[] notas;
-
+	private String[] gabarito;
+	
 	//relações entre tabelas
 	private Aluno aluno;
 
-	public Prova() {
-		gabarito = new int[10];
+	public ProvaProfessor() {
+		gabarito = new String[10];
 	}
 
 	public Long getId() {
@@ -31,20 +33,20 @@ public class Prova {
 		this.id = id;
 	}
 
-	public int[] getGabarito() {
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String[] getGabarito() {
 		return gabarito;
 	}
 
-	public void setGabarito(int[] gabarito) {
+	public void setGabarito(String[] gabarito) {
 		this.gabarito = gabarito;
-	}
-
-	public int[] getNotas() {
-		return notas;
-	}
-
-	public void setNotas(int[] notas) {
-		this.notas = notas;
 	}
 
 	public Aluno getAluno() {

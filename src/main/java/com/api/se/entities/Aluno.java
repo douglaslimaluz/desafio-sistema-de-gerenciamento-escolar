@@ -19,7 +19,7 @@ public class Aluno {
 	private String nome;
 	
 	//relações entre tabelas
-	private List<Prova> provas;
+	private List<ProvaProfessor> provas;
 	
 	public Long getId() {
 		return id;
@@ -37,11 +37,11 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public List<Prova> getProvas() {
+	public List<ProvaProfessor> getProvas() {
 		return provas;
 	}
 
-	public void setProvas(List<Prova> provas) {
+	public void setProvas(List<ProvaProfessor> provas) {
 		this.provas = provas;
 	}
 

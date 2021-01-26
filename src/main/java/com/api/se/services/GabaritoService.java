@@ -1,10 +1,10 @@
 package com.api.se.services;
 
-import com.api.se.entities.Prova;
+import com.api.se.entities.ProvaProfessor;
 
 public interface GabaritoService {
 	
-	public Prova cadastrarProva(/*ProvaDTO prova*/);
+	public ProvaProfessor cadastrarProva(/*ProvaDTO prova*/);
 	
 	
 }
