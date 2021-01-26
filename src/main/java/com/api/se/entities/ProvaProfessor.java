@@ -17,9 +17,6 @@ public class ProvaProfessor {
 	private String titulo;
 	
 	private String[] gabarito;
-	
-	//relações entre tabelas
-	private Aluno aluno;
 
 	public ProvaProfessor() {
 		gabarito = new String[10];
@@ -47,14 +44,6 @@ public class ProvaProfessor {
 
 	public void setGabarito(String[] gabarito) {
 		this.gabarito = gabarito;
-	}
-
-	public Aluno getAluno() {
-		return aluno;
-	}
-
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
 	}
 
 }

@@ -1,12 +1,17 @@
 package com.api.se.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "prova_aluno")
 public class ProvaAluno {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private Long idProva;
@@ -40,5 +45,5 @@ public class ProvaAluno {
 	public void setRespostas(String[] respostas) {
 		this.respostas = respostas;
 	}
-	
+
 }

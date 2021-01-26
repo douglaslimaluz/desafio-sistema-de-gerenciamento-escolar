@@ -1,7 +1,5 @@
 package com.api.se.entities;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,9 +16,6 @@ public class Aluno {
 	@Column(nullable = false)
 	private String nome;
 	
-	//relações entre tabelas
-	private List<ProvaProfessor> provas;
-	
 	public Long getId() {
 		return id;
 	}
@@ -35,14 +30,6 @@ public class Aluno {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public List<ProvaProfessor> getProvas() {
-		return provas;
-	}
-
-	public void setProvas(List<ProvaProfessor> provas) {
-		this.provas = provas;
 	}
 
 }
