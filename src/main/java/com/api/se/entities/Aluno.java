@@ -12,13 +12,13 @@ public class Aluno {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(nullable = false)
 	private String nome;
-	
+
 	@Column(nullable = false, unique = true)
 	private String matricula;
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -34,7 +34,7 @@ public class Aluno {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 	public String getMatricula() {
 		return matricula;
 	}
@@ -42,6 +42,5 @@ public class Aluno {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	
 
 }

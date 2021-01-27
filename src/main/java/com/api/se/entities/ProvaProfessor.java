@@ -1,5 +1,6 @@
 package com.api.se.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,12 +15,14 @@ public class ProvaProfessor {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@Column(nullable = false)
 	private String titulo;
 	
-	private String[] gabarito;
+	@Column(nullable = false)
+	private Integer[] gabarito;
 
 	public ProvaProfessor() {
-		gabarito = new String[10];
+		gabarito = new Integer[10];
 	}
 
 	public Long getId() {
@@ -38,11 +41,11 @@ public class ProvaProfessor {
 		this.titulo = titulo;
 	}
 
-	public String[] getGabarito() {
+	public Integer[] getGabarito() {
 		return gabarito;
 	}
 
-	public void setGabarito(String[] gabarito) {
+	public void setGabarito(Integer[] gabarito) {
 		this.gabarito = gabarito;
 	}
 

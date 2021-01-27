@@ -2,28 +2,48 @@ package com.api.se.dto;
 
 public class ProvaAlunoDTO {
 
-	private Long idProva;
+	private Long idAluno;
 
-	private String[] respostas;
-	
+	private Long idProvaProfessor;
+
+	private Integer[] respostas;
+
+	private Integer[] pesosRespostas;
+
 	public ProvaAlunoDTO() {
-		respostas = new String[10];
+		respostas = new Integer[10];
 	}
 
-	public Long getIdProva() {
-		return idProva;
+	public Long getIdAluno() {
+		return idAluno;
 	}
 
-	public void setIdProva(Long idProva) {
-		this.idProva = idProva;
+	public void setIdAluno(Long idAluno) {
+		this.idAluno = idAluno;
 	}
 
-	public String[] getRespostas() {
+	public Integer[] getRespostas() {
 		return respostas;
 	}
 
-	public void setRespostas(String[] respostas) {
+	public void setRespostas(Integer[] respostas) {
 		this.respostas = respostas;
 	}
-	
+
+	public Long getIdProvaProfessor() {
+		return idProvaProfessor;
+	}
+
+	public void setIdProvaProfessor(Long idProvaProfessor) {
+		this.idProvaProfessor = idProvaProfessor;
+	}
+
+	public Integer[] getPesosRespostas() {
+		return pesosRespostas;
+	}
+
+	public void setPesosRespostas(Integer[] pesosRespostas) {
+		this.pesosRespostas = pesosRespostas;
+	}
+
 }

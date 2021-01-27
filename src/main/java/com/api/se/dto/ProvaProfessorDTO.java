@@ -1,13 +1,13 @@
 package com.api.se.dto;
 
 public class ProvaProfessorDTO {
-	
+
 	private String titulo;
-	
-	private String[] gabarito;
-	
+
+	private Integer[] gabarito;
+
 	public ProvaProfessorDTO() {
-		gabarito = new String[10];
+		gabarito = new Integer[10];
 	}
 
 	public String getTitulo() {
@@ -18,12 +18,12 @@ public class ProvaProfessorDTO {
 		this.titulo = titulo;
 	}
 
-	public String[] getGabarito() {
+	public Integer[] getGabarito() {
 		return gabarito;
 	}
 
-	public void setGabarito(String[] gabarito) {
+	public void setGabarito(Integer[] gabarito) {
 		this.gabarito = gabarito;
 	}
-	
+
 }
