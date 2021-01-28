@@ -1,3 +1,4 @@
+![GitHub](https://img.shields.io/github/license/douglaslimaluz/desafio-sistema-de-gerenciamento-escolar?logo=MIT)
 
 # Sistema escolar
 
